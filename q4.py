@@ -1,14 +1,25 @@
 def string_reverse(s):
     """
     Task 1
-    - Create a function that reverses a given string (s).
+    - A function that reverses a given string (s).
     - s must be a string.
     - Return the reversed string.
     """
+    print("Original String: ",s)
+    r=""
+    for i in range(len(s)-1,-1, -1):
+      r = r + s[i]
+    print("Reversed String: ",r)
+    print("")
     return
 
 
 # Task 2
 # Invoke the function "string_reverse" using the following scenarios:
-# - "Hello World"
-# - "Python"
+# Scenario 1:
+print("Scenario 1")
+string_reverse("Hello World")
+
+# Scenario 2:
+print("Scenario 2")
+string_reverse("Python")
