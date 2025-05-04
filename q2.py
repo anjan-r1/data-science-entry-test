@@ -12,21 +12,19 @@ def find_and_replace(lst, find_val, replace_val):
             modified_list.append(replace_val)
          else:
             modified_list.append(item)
-      print([modified_list])
+      return([modified_list])
     else:
-      print(-1)
-    return
+      return("Not a list")
 
 # Invoke the function "find_and_replace" for the below 2 scenarios:
 # Scenario 1
-find_and_replace([1, 2, 3, 4, 2, 2], 2, 5)
+print(find_and_replace([1, 2, 3, 4, 2, 2], 2, 5))
 # [[1, 5, 3, 4, 5, 5]]
 
 # Scenario 2
-find_and_replace(["apple", "banana", "apple"], "apple", "orange")
+print(find_and_replace(["apple", "banana", "apple"], "apple", "orange"))
 # [['orange', 'banana', 'orange']]
 
 # Additional scenario:
-find_and_replace("apple", "apple", "orange")
+# print(find_and_replace("apple", "apple", "orange"))
 # -1
-
