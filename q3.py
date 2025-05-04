@@ -5,17 +5,18 @@ def update_dictionary(dct, key, value):
     - Returns the updated dictionary.
     """
     if key in dct:
-      print("Original Value: ",dct)
-      
+      print("Original Value: ",key, dct[key])
+
     dct[key]=value
-    print("New Value: ", dct)
-    return
+    return "New Value: " + key + " " + str(value)
 
 # Invoke the function "update_dictionary" using the following scenarios:
 # Scenario 1:
 print("Scenario 1")
-update_dictionary({}, "name", "Alice")
+print(update_dictionary({}, "name", "Alice"))
+
+print("")
 
 # Scenario 2:
 print("Scenario 2")
-update_dictionary({"age": 25}, "age", 26)
+print(update_dictionary({"age": 25}, "age", 26))
